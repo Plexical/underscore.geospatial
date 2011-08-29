@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>underscore.distance</title>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script>
+    <script src="distsort.js"></script>
+    <script>
+      gbg_lat = 57.7088951
+      gbg_lng = 11.9734794
+      random_places = [
+      {name: 'Malmö', lat: 55.608635, lng: 13.0006313},
+      {name: 'Alingsås', lat: 57.9268612, lng: 12.532494},
+      {name: 'Stockholm', lat: 59.3299583, lng: 18.0572117},
+      {name: 'Umeå', lat: 63.8300607, lng: 20.266814},
+      {name: 'Varberg', lat: 57.1093763, lng: 12.2480832},
+      ]
+
+      var sorted = nearest(gbg_lat, gbg_lng, random_places)
+      console.log(_.pluck(sorted, 'name'))
+    </script>
+  </head>
+  
+  <body>
+    Repl.
+  </body>
+</html>
