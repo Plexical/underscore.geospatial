@@ -2,12 +2,15 @@ underscore.distance
 -------------------
 
 Plans
+
     * Documentation generation with Docco
 
 Dependencies, to run:
+
     * Undercore.js
 
 Dependencies, to develop:
+
     * CoffeeScript
     * Jasmine-node
 
