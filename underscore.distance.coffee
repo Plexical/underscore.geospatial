@@ -19,7 +19,8 @@ distance = (lat1, lng1, lat2, lng2) ->
   a = (Math.sin(dLat/2) * Math.sin(dLat/2) +
     Math.sin(dLng/2) * Math.sin(dLng/2) * Math.cos(lat1) * Math.cos(lat2))
 
-  6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+  # 12742 - shortened km transform (6371) * 2 (part of the formula)
+  12742 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
 
 # Assumes an iterable object with elements that have `.lat` and
 # `.lng` attributes. See specs for examples.
