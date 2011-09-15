@@ -1,0 +1,16 @@
+{
+  "name"          : "underscore",
+  "description"   : "Geospatial extensions for the Underscore.js library.",
+  "author"        : "Jacob Oscarson <jacob@plexical.com>",
+  "keywords"      : ["util", "underscore", "geospatial"],
+  "dependencies"  : [
+      { "underscore": ">=1.1" }
+  ],
+  "repository"    : {
+      "type": "git",
+      "url": "git://github.com/Plexical/underscore.geospatial"
+  },
+  "main"          : "underscore.geospatial",
+  "version"       : "0.1",
+  "licenses"      : [ { "type" : "MIT" } ]
+}
