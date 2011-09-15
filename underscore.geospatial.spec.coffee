@@ -1,4 +1,4 @@
-require './underscore.distance'
+require './underscore.geospatial'
 
 _ = root._ or require 'underscore'
 
